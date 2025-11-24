@@ -1,0 +1,54 @@
+.judul{
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.paragraph{
+    text-decoration: underline;
+    text-align: center;
+}
+
+span{
+    color: red;
+    font-weight: bold;
+}
+
+#heading4{
+    color: brown;
+}
+
+img{
+    background-color: pink;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.hyperlink:hover{
+    color: red;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+}
+
+.table td, .table th{
+    padding: 4px;
+    border: 1px solid black;
+}
+
+.table th{
+    background-color: yellow;
+}
+
+.table td{
+    background-color: lightgreen;
+    text-align: center;
+}
