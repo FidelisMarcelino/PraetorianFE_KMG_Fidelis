@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesi 4</title>
+
+    <!-- Internal JS -->
+    <script>
+        function halo(){
+            alert("Halo saya dari Internal JS!");
+        }
+    </script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Inline JS -->
+    <button onclick="alert('Halo saya dari inline JS!')">Klik Inline</button>
+
+    <!-- Internal JS -->
+    <button onclick="halo()">Klik Internal</button>
+
+    <!-- External JS -->
+     <button onclick="haloExternal()">Klik External</button>
+</body>
+</html>
