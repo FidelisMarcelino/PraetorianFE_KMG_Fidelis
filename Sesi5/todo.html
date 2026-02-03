@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+    <div class="mt-4 flex flex-col text-center">
+        <p class="text-3xl font-bold text-blue-700">My Todo List</p>
+
+        <div class="flex justify-center">
+            <form id="todoForm" class="mt-2 border-1 rounded-xl w-80 flex justify-between">
+                <input type="text" id="taskInput" placeholder="Masukkan Tugas..." class="pl-2 rounded-xl">
+                <button type="submit" class="bg-green-600 w-100 p-1 text-white font-semibold rounded-xl hover:opacity-75">
+                    Add
+                </button>
+            </form>
+        </div>
+
+        <div class="flex gap-4 justify-center m-2">
+            <button id="popBtn" class="bg-yellow-300 p-1 rounded-sm font-semibold hover:opacity-75 cursor-pointer">Hapus Terakhir</button>
+            <button id="clearBtn" class="bg-red-500 p-1 rounded-sm font-semibold hover:opacity-75 cursor-pointer text-white">Hapus Semua</button>
+        </div>
+
+        <p id="status">Total Tugas: <span id="count">0</span></p>
+
+        <div class="flex justify-center">
+            <ul id="todoList" class="mt-2 space-y-2 font-semibold"></ul>
+        </div>
+    </div>
+</body>
+<script src="todo.js"></script>
+
+</html>
