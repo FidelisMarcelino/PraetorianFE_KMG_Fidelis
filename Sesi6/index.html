@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sesi 3</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+      @keyframes pop {
+        0% {
+          transform: scale(0);
+        }
+
+        80% {
+          transform: scale(1.1);
+        }
+
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .pop {
+        animation: pop 2s;
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- Comment = CTRL + / -->
+
+    <!-- Navbar -->
+    <div class="flex justify-between ml-[20px]">
+      <div class="flex items-center gap-10">
+        <p class="font-bold text-lg text-violet-700">Educool school</p>
+
+        <!-- Copy 1 baris = ALT + SHIFT + ARROW down -->
+        <a class="text-gray-700 font-semibold hover:underline" href="/#course"
+          >Courses</a
+        >
+        <a
+          class="text-gray-700 font-semibold hover:underline"
+          href="/About.html"
+          >About Us</a
+        >
+        <a
+          class="text-gray-700 font-semibold hover:underline"
+          href="/Contact.html"
+          >Contact Us</a
+        >
+      </div>
+
+      <div class="flex items-center gap-2 p-2">
+        <button
+          class="p-2 text-gray-700 font-semibold border-1 border-violet-700 rounded-sm hover:bg-violet-700 hover:text-white"
+        >
+          Login
+        </button>
+        <button
+          class="p-2 bg-violet-700 font-semibold rounded-sm text-white hover:bg-white hover:text-violet-700 hover:border-1 hover:border-violet-700"
+        >
+          Follow Us
+        </button>
+      </div>
+    </div>
+
+    <!-- Landing -->
+    <div class="flex items-center justify-center h-[80vh]">
+      <div class="p-4 w-[40%]">
+        <h1>New way to study online with the best education system.</h1>
+
+        <a href="/About.html">
+          <button
+            class="bg-violet-700 font-semibold rounded-sm text-white p-2 cursor-pointer hover:bg-white hover:text-violet-700 hover:border-1 hover:border-violet-700"
+          >
+            Read more
+          </button>
+        </a>
+        <a href="/Login.html">
+          <button
+            class="text-gray-700 font-semibold border-1 border-violet-700 rounded-sm p-2 cursor-pointer hover:bg-violet-700 hover:text-white"
+          >
+            Join us
+          </button>
+        </a>
+      </div>
+
+      <div class="bg-violet-600 rounded-lg flex ml-4 w-[300px] h-[300px]">
+        <img class="pop" src="Asset Sesi 3/Img/Men.png" alt="" />
+      </div>
+    </div>
+
+    <p class="text-3xl font-bold m-4 text-center text-violet-700" id="courses">Our Courses</p>
+    <div id="courseList" class="grid grid-cols-3 m-4 gap-4"></div>
+  </body>
+  <script src="courses.js"></script>
+</html>

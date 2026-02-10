@@ -1,0 +1,35 @@
+[
+  {
+    "name": "English Academy Online",
+    "description": "Kursus bahasa inggris online kurikulum Internasional",
+    "task": [
+      "✅ 24x kelas bersama Native Master Teacher",
+      "✅ 24x kelas interaktif bersama Local Master Teacher",
+      "✅ Akses e-book Kurikulum Berstandar Internasional"
+    ],
+    "price": 560000,
+    "image": "Img/English.jpg"
+  },
+  {
+    "name": "Web Development",
+    "description": "HTML, CSS, dan JavaScript untuk membangun website",
+    "task": [
+      "✅ 24x kelas bersama Native Master Teacher",
+      "✅ 24x kelas interaktif bersama Local Master Teacher",
+      "✅ Akses e-book Kurikulum Berstandar Internasional"
+    ],
+    "price": 250000,
+    "image": "Img/Webdev2.png"
+  },
+  {
+    "name": "React JS",
+    "description": "Membangun aplikasi modern dengan React",
+    "task": [
+      "✅ 24x kelas bersama Native Master Teacher",
+      "✅ 24x kelas interaktif bersama Local Master Teacher",
+      "✅ Akses e-book Kurikulum Berstandar Internasional"
+    ],
+    "price": 300000,
+    "image": "Img/react.png"
+  }
+]
