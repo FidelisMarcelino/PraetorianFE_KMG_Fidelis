@@ -36,7 +36,7 @@ form.addEventListener("submit", async (e) => {
   try {
     const response = await fetch(url, {
       method,
-      headers: { "Contect-Type": "application/json" },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(requestBody),
     });
 
@@ -76,6 +76,6 @@ async function getProductsId(id) {
 }
 
 if(productId){
-    document.querySelector("h2").textContent = "Edit Product";
+    document.getElementById("formTitle").textContent = "Edit Product";
     getProductsId(productId);
 }
