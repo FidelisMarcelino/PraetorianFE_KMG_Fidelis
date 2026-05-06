@@ -1,10 +1,15 @@
 import type { Recipe } from "../types/recipe";
 
-export const getRecipes = () : Recipe[] => {
+export function getRecipes(): Recipe[] {
+    const data = localStorage.getItem("recipes");
+
+    if (!data) return []; 
+
     try {
-        return JSON.parse(localStorage.getItem('recipes') || '[');
+        const parsed = JSON.parse(data);
+        return Array.isArray(parsed) ? parsed : [];
     } catch {
-        return[];
+        return [];
     }
 }
 
